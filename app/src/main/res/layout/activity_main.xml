@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:clickable="false"
+    android:background="#ffc718ff"
+    >
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/SideOne"
+        android:layout_marginTop="45dp"
+        android:hint="Input First Side"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/SideTwo"
+        android:layout_alignStart="@+id/SideTwo"
+        android:backgroundTint="#ffffffff"
+        android:background="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/SideTwo"
+        android:layout_below="@+id/SideOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:hint="Input Second Side"
+        android:background="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/Area"
+        android:layout_below="@+id/SideTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:hint="Area"
+        android:background="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/HypLength"
+        android:hint="Hypotenuse Length"
+        android:layout_below="@+id/Area"
+        android:layout_alignLeft="@+id/Area"
+        android:layout_alignStart="@+id/Area"
+        android:layout_marginTop="52dp"
+        android:background="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/Calculatebutton"
+        android:layout_below="@+id/SideTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        style="@style/Base.TextAppearance.AppCompat.Body1" />
+
+</RelativeLayout>
